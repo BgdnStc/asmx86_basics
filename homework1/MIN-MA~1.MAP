@@ -1,0 +1,13 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 00000H 00000H MIN-MA~1_TEXT      CODE
+ 00000H 00000H 00000H _DATA              DATA
+ 00000H 00029H 0002AH DATA               
+ 00030H 00089H 0005AH STACKSEG           
+ 00090H 00104H 00075H MAIN               
+ 00110H 00174H 00065H PROCEDURES         
+
+Program entry point at 0009:0000
+Warning: No stack
+
