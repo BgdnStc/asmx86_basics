@@ -93,12 +93,11 @@ Procedures SEGMENT
 		push DX
 		push DS
 		
-		mov CX, SS:[BP+14] ; length
-		mov SI, SS:[BP+16] ; offset vect1
-		mov AX, SS:[BP+18] ; seg vect1
+		mov CX, SS:[BP+14]
+		mov SI, SS:[BP+16]
+		mov AX, SS:[BP+18]
 		mov DS, AX
-		xor AX, AX
-		
+		xor AX, AX	
 		mov AX, DS:[SI]
 		push DS
 		push SI
@@ -117,8 +116,7 @@ Procedures SEGMENT
 			cmp CX, 0
 			jle endloop
 			add SI, 2
-			mov AX, DS:[SI]
-			
+			mov AX, DS:[SI]			
 			push DS
 			push SI
 			mov SI, SS:[BP+10]
